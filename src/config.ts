@@ -181,6 +181,9 @@ const notifications = {
 		notifyGroup: envOrArray(process.env.DISCORD_NOTIFY_GROUP),
 		webHookUrl: envOrArray(process.env.DISCORD_WEB_HOOK)
 	},
+	webrequest: {
+		url: envOrArray(process.env.WEBREQUEST_URL)
+	},
 	email: {
 		password: envOrString(process.env.EMAIL_PASSWORD),
 		smtpAddress: envOrString(process.env.SMTP_ADDRESS),
@@ -291,8 +294,7 @@ const page = {
 
 const proxy = {
 	address: envOrString(process.env.PROXY_ADDRESS),
-	port: envOrNumber(process.env.PROXY_PORT, 80),
-	protocol: envOrString(process.env.PROXY_PROTOCOL, 'http')
+	port: envOrNumber(process.env.PROXY_PORT, 80)
 };
 
 // Check for deprecated configuration values

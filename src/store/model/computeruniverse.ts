@@ -552,6 +552,18 @@ export const Computeruniverse: Store = {
 			series: 'ryzen5950',
 			url:
 				'https://www.computeruniverse.net/de/amd-ryzen-9-5950x-box-ohne-kuehler'
+		},
+		{
+			brand: 'sony',
+			model: 'ps5 console',
+			series: 'sonyps5c',
+			url: 'https://www.computeruniverse.net/de/sony-playstation-5-weiss-schwarz-825gb-ssd'
+		},
+		{
+			brand: 'sony',
+			model: 'ps5 digital',
+			series: 'sonyps5de',
+			url: 'https://www.computeruniverse.net/de/sony-playstation-5-digital-edition-weiss-schwarz-825gb-ssd'
 		}
 	],
 	name: 'computeruniverse'

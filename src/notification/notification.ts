@@ -1,6 +1,7 @@
 import {Link, Store} from '../store/model';
 import {adjustPhilipsHueLights} from './philips-hue';
 import {playSound} from './sound';
+import {sendWebrequestNotification} from './webrequest';
 import {sendDesktopNotification} from './desktop';
 import {sendDiscordMessage} from './discord';
 import {sendEmail} from './email';
@@ -19,6 +20,7 @@ export function sendNotification(link: Link, store: Store) {
 	// Priority
 	playSound();
 	sendEmail(link, store);
+	sendWebrequestNotification(link, store);
 	sendSms(link, store);
 	sendDesktopNotification(link, store);
 	// Non-priority
@@ -33,4 +35,5 @@ export function sendNotification(link: Link, store: Store) {
 	sendTweet(link, store);
 	sendTwilioMessage(link, store);
 	sendTwitchMessage(link, store);
+	
 }
